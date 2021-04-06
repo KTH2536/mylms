@@ -25,7 +25,7 @@ const routes = {
     logout: LOGOUT,
     search: SEARCH,    
     users: USERS,
-    userDetaile: USER_DETAIL,
+    userDetail: USER_DETAIL,
     editProfile: EDIT_PROFILE,
     changePassword: CHANGE_PASSWORD,
     videos: VIDEOS,

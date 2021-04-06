@@ -5,7 +5,7 @@ import bodyParser from 'body-parser';
 import express from 'express';
 import userRouter from './routers/userRouter.js';
 import videoRouter from './routers/videoRouter.js';
-import globalRouter from './routers/globlaRouter.js';
+import globalRouter from './routers/globalRouter.js';
 import routes from './routes.js';
 
 const app = express();
