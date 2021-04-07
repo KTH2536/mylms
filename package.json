@@ -1,0 +1,27 @@
+{
+  "name": "wetube",
+  "version": "1.0.0",
+  "description": "Youtube cloning for my skills improvement",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bihan2536/wetube.git"
+  },
+  "author": "Bihan2536",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bihan2536/wetube/issues"
+  },
+  "homepage": "https://github.com/Bihan2536/wetube#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/node": "^7.13.13",
+    "@babel/preset-env": "^7.13.12",
+    "nodemon": "^2.0.7"
+  }
+}
