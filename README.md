@@ -1,7 +1,9 @@
-# 2021 Wetube
+# 2021 MyLMS
 
-Clone coding from NomadCoders/Nico!
-The latest(2021) way to make website by nodeJS and mongoDB
+The latest(2021) way to make website by nodeJS and mongoDB... maybe!
+I hope this project will be fun & incourage!
+
+---
 
 ## requires
 
@@ -16,11 +18,32 @@ The latest(2021) way to make website by nodeJS and mongoDB
 - [ ] PROFESSOR SIDE
     - [ ] I DUNNO ERRTHING!
 
-### DataBase
+---
+
+## DataBases
 
 * user
-    * PK
+    * userID(PK)
     * ID
     * Password
     * Email
     * ProfileImage
+
+* Lecture
+    * videoID(PK)
+
+---
+
+#### Made by
+
+- Backend << Node.js
+    - Express ( Node.js Framework )
+    - Babel
+    - Morgan
+
+- Frontend
+    - Pug
+    - CSS
+    - Vue.js
+
+- Database
