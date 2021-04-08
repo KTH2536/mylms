@@ -1,0 +1,15 @@
+extends base.pug
+include mixins/lecture.pug
+
+block header 
+    h1 header here!
+
+block main 
+    ul#lectures
+        each cola in lectures 
+            +lecture(cola)
+        else 
+            li You didn't paid any lecture.
+
+block aside
+    h3 aside here!

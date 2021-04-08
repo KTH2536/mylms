@@ -1,0 +1,22 @@
+doctype html 
+html(lang="ko-kr")
+    head 
+        title #{pageTitle} | #{user.name}
+        link(rel="stylesheet" href="https://unpkg.com/mvp.css")
+
+    body 
+        header
+            nav
+                ul 
+                    if user.loggedIn
+                        li
+                            a(href='/logout') Log out
+                    else
+                        li 
+                            a(href='/login') Log in
+            block header
+        main 
+            block main 
+        aside 
+            block aside 
+        include partials/footer.pug

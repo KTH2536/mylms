@@ -5,4 +5,22 @@ The latest(2021) way to make website by nodeJS and mongoDB
 
 ## requires
 
-- [ ] STILL IDUNNO
+- [ ] USER SIDE
+    - [ ] Home
+        * Time
+        * Current-assignments
+    - [ ] Dashboard
+    - [ ] Calender
+    - [ ] Message?
+    - [ ] Notification
+- [ ] PROFESSOR SIDE
+    - [ ] I DUNNO ERRTHING!
+
+### DataBase
+
+* user
+    * PK
+    * ID
+    * Password
+    * Email
+    * ProfileImage
