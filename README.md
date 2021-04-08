@@ -22,15 +22,8 @@ I hope this project will be fun & incourage!
 
 ## DataBases
 
-* user
-    * userID(PK)
-    * ID
-    * Password
-    * Email
-    * ProfileImage
-
-* Lecture
-    * videoID(PK)
+[link](https://aquerytool.com:443/aquerymain/index/?rurl=9877ee44-de67-4796-9789-9973523e7f3a)
+password : m5ca73
 
 ---
 
