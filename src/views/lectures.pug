@@ -1,4 +1,5 @@
 extends base.pug
 
 block main 
-    h1 Lectures everywhere! #{lecture.title}
+    h1 Lectures everywhere! #{course.title}
+    a(href=`${course.id}/add`) Add Video

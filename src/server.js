@@ -2,7 +2,7 @@ import express from "express";
 import morgan from "morgan";
 import cors from "cors";
 import globalRouter from "./routers/globalRouter.js";
-import videoRouter from "./routers/videoRouter.js";
+import lectureRouter from "./routers/lectureRouter.js";
 
 const app = express();
 const logger = morgan('dev');
@@ -18,6 +18,6 @@ app.set("views", process.cwd()+'/src/views');
 app.use(cors());
 app.use(logger);
 app.use('/', globalRouter);
-app.use('/lectures', videoRouter);
+app.use('/lectures', lectureRouter);
 
 app.listen(PORT, (req, res) => console.log(`Listening at: http://localhost:${PORT}`));
