@@ -1,0 +1,5 @@
+mixin course(lecture, course)
+    li 
+        .title title: 
+            a(href=`${lecture}/courses/${course.id}`) #{course.title}
+        .description description: #{course.description}

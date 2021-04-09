@@ -17,6 +17,7 @@ app.set("views", process.cwd()+'/src/views');
 // Middlewares
 app.use(cors());
 app.use(logger);
+app.use(express.urlencoded({ extended: true }));
 app.use('/', globalRouter);
 app.use('/lectures', lectureRouter);
 
