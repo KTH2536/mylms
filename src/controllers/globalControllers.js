@@ -1,13 +1,14 @@
+//  가상
 let lectures = [
     {
+        id: 1,
         title: "python",
-        level: "5",
-        id: 1
+        level: "0"
     },
     {
+        id: 2,
         title: "C++",
-        level: "2",
-        id: 2
+        level: "0"
     }
 ];
 
