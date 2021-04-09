@@ -5,16 +5,7 @@ html(lang="ko-kr")
         link(rel="stylesheet" href="https://unpkg.com/mvp.css")
 
     body 
-        header
-            nav
-                ul 
-                    if user.loggedIn
-                        li
-                            a(href='/logout') Log out
-                    else
-                        li 
-                            a(href='/login') Log in
-            block header
+        include partials/header.pug
         main 
             block main 
         aside 

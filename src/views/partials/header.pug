@@ -1,0 +1,11 @@
+header
+    nav  
+        a(href="") Home
+        ul 
+            if user.loggedIn
+                li
+                    a(href='/logout') Log out
+            else
+                li 
+                    a(href='/login') Log in
+    

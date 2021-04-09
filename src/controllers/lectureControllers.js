@@ -24,7 +24,7 @@ export const handleLectures = (req, res) => {
     return res.render('lectures.pug', { course, user, pageTitle:"temp", lectures });
 };
 
-export const handleAddcourse = (req, res) => {
+export const handleCourse = (req, res) => {
     const { id } = req.params;
     const course = lectures[id-1];
     return res.render('course.pug', { course, user, pageTitle:"temp", lectures });

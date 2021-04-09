@@ -1,4 +1,6 @@
 extends base.pug
 
 block main
-    h1 Add course
+    form(method="POST")
+        input(placeholder="Title Name", required)
+        input(value="Save", type="submit")

@@ -1,9 +1,9 @@
 import express from "express";
-import { handleAddcourse, handleLectures } from "../controllers/lectureControllers";
+import { handleCourse, handleLectures } from "../controllers/lectureControllers";
 
 const lectureRouter = express.Router();
 
 lectureRouter.get('/:id(\\d+)', handleLectures);
-lectureRouter.get('/:id(\\d+)/add', handleAddcourse);
+lectureRouter.get('/:id(\\d+)/course', handleCourse);
 
 export default lectureRouter;
