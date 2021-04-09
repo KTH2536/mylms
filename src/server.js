@@ -1,8 +1,11 @@
+import './db.js';
+import './models/Lecture.js';
 import express from "express";
 import morgan from "morgan";
 import cors from "cors";
 import globalRouter from "./routers/globalRouter.js";
 import lectureRouter from "./routers/lectureRouter.js";
+
 
 const app = express();
 const logger = morgan('dev');
@@ -21,4 +24,4 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/', globalRouter);
 app.use('/lectures', lectureRouter);
 
-app.listen(PORT, (req, res) => console.log(`Listening at: http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`Listening at: http://localhost:${PORT}`));

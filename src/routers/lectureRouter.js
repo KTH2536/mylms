@@ -5,7 +5,7 @@ import courseRouter from './courseRouter.js';
 const lectureRouter = express.Router();
 
 
-lectureRouter.use('/:id(\\d+)/courses/:id(\\d+)', courseRouter);
+lectureRouter.use('/:id(\\d+)/courses', courseRouter);
 
 lectureRouter.route('/upload').get(getUpload).post(postUpload);
 lectureRouter.get('/:id(\\d+)', getLecture);
