@@ -17,15 +17,20 @@ const user = {
         loggedIn: false
     };
 
-export const handleLectures = (req, res) => {
+export const getLectures = (req, res) => {
     const { id } = req.params;
-    const course = lectures[id-1];
+    const lecture = lectures[id-1];
     console.log(`Watching lectuer No.${id}`);
-    return res.render('lectures.pug', { course, user, pageTitle:"temp", lectures });
+    return res.render('lectures.pug', { lecture, user, pageTitle:"temp", lectures });
 };
 
-export const handleCourse = (req, res) => {
+export const getLecture = (req, res) => {
     const { id } = req.params;
-    const course = lectures[id-1];
-    return res.render('course.pug', { course, user, pageTitle:"temp", lectures });
+    const lecture = lectures[id-1];
+    return res.render('lectureEdit.pug', { lecture, user, pageTitle:"temp", lectures });
+};
+
+export const postLecture = (req, res) => {
+    const { id } = req.params;
+    return res.redirect(`/lectures/${id}`);
 };

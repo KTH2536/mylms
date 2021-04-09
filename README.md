@@ -22,7 +22,7 @@ I hope this project will be fun & incourage!
 
 ## DataBases
 
-[form](https://aquerytool.com:443/aquerymain/index/?rurl=9877ee44-de67-4796-9789-9973523e7f3a)
+[form](https://aquerytool.com:443/aquerymain/index/?rurl=9877ee44-de67-4796-9789-9973523e7f3a)<br>
 password : m5ca73
 
 ---
@@ -32,11 +32,10 @@ password : m5ca73
 - Backend << Node.js
     - Express ( Node.js Framework )
     - Babel
-    - Morgan
 
 - Frontend
     - Pug
     - CSS
-    - Vue.js
+    - Vue.js ( Later )
 
 - Database
