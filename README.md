@@ -11,12 +11,11 @@ I hope this project will be fun & incourage!
     - [ ] Home
         * Time
         * Current-assignments
-    - [ ] Dashboard
+        * Dashboard
     - [ ] Calender
-    - [ ] Message?
     - [ ] Notification
-- [ ] PROFESSOR SIDE
-    - [ ] I DUNNO ERRTHING!
+
++ 웹 스크래핑을 통한 타 LMS의 정보를 가져오는 기능...
 
 ---
 
@@ -31,7 +30,6 @@ password : m5ca73
 
 - Backend << Node.js
     - Express ( Node.js Framework )
-    - Babel
 
 - Frontend
     - Pug
