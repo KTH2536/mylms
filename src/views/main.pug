@@ -1,0 +1,9 @@
+extends base.pug
+include mixins/courses.pug
+block content
+  main 
+    a(href='/courses/edit') ADD COURSE
+    each course in courses 
+      +courses(course)
+    else 
+      h1 No Course in dbs

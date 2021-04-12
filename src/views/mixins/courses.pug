@@ -1,0 +1,11 @@
+mixin courses(course)
+  ul 
+    li Course Title: #{course.title}
+    li Author: #{course.author}
+    li Date: #{course.createdAt}
+    .hashtags  
+      each tags in course.hashtags
+        li= tags
+  form(method="DELETE", action="/courses/#{course.id}")
+    input(type="submit", value="X")
+

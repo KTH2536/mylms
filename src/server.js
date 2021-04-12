@@ -1,27 +1,21 @@
-import './db.js';
-import './models/Lecture.js';
-import express from "express";
-import morgan from "morgan";
-import cors from "cors";
-import globalRouter from "./routers/globalRouter.js";
-import lectureRouter from "./routers/lectureRouter.js";
+import express from 'express';
+import morgan from 'morgan';
+import mainRouter from './routers/mainRouter.js';
+import courseRouter from './routers/courseRouter.js';
 
-
-const app = express();
 const logger = morgan('dev');
-const PORT = 3000;
+const app = express();
 
-
-// Application Settings
-app.set("view engine", "pug");
-app.set("views", process.cwd()+'/src/views');
-
-
-// Middlewares
-app.use(cors());
-app.use(logger);
+// middlewares
+app.use(logger)
 app.use(express.urlencoded({ extended: true }));
-app.use('/', globalRouter);
-app.use('/lectures', lectureRouter);
 
-app.listen(PORT, () => console.log(`Listening at: http://localhost:${PORT}`));
+// application settings
+app.set('view engine', 'pug');
+app.set('views', process.cwd()+ '/src/views');
+
+// routers
+app.use('/', mainRouter);
+app.use('/courses', courseRouter);
+
+export default app;

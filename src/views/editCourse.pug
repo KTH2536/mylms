@@ -1,0 +1,8 @@
+extends base.pug
+block content 
+  main 
+    form(method="POST", action="/courses/edit")
+      input(placeholder="Title Name", type="text", name="title")
+      input(placeholder="Your display name", type="text", name="author")
+      input(placeholder="input hashtags ex)Math Python Pandas", type="text", name="hashtags")
+      input(type="submit", value="Create")

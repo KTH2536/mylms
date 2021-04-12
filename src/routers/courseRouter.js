@@ -1,8 +1,9 @@
 import express from 'express';
-import { watchCourse } from '../controllers/courseController';
+import { deleteCourse, editCourse, getCourse, postCourse } from '../controllers/courseController';
 
 const courseRouter = express.Router();
 
-courseRouter.get('/:id(\\d+)', watchCourse);
+courseRouter.route('/:id(\\d+)').get(getCourse).delete(deleteCourse);
+courseRouter.route('/edit').get(editCourse).post(postCourse);
 
 export default courseRouter;

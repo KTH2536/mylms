@@ -1,13 +1,10 @@
-doctype html 
+doctype HTML 
 html(lang="ko-kr")
-    head 
-        title #{pageTitle} | #{user.name}
-        link(rel="stylesheet" href="https://unpkg.com/mvp.css")
-
-    body 
-        include partials/header.pug
-        main 
-            block main 
-        aside 
-            block aside 
-        include partials/footer.pug
+  head 
+    link(rel="stylesheet" href="https://unpkg.com/mvp.css")
+  body 
+    header 
+      include partials/header.pug
+    block content 
+    footer 
+      include partials/footer.pug

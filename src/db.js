@@ -1,11 +1,13 @@
 import mongoose from "mongoose";
+import { courseSchema } from "./models/Course";
 
-mongoose.connect("mongodb://127.0.0.1:27017/mylms", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-});
+
+mongoose.connect('mongodb://127.0.0.1:27017/mylms', {useNewUrlParser: true, useUnifiedTopology: true});
 
 const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', () => {
+  console.log("We are connected!");
+});
 
-db.on("error", (error) => console.log("Error Occured:",error));
-db.once('open', () => console.log("✔ Connected to MongoDB"));
+export const Course = mongoose.model('Course', courseSchema);

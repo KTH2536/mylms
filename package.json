@@ -1,15 +1,15 @@
 {
-  "name": "wetube",
+  "name": "mylms",
   "version": "1.0.0",
   "description": "Youtube cloning for my skills improvement",
   "scripts": {
-    "dev": "nodemon --exec babel-node src/server.js"
+    "dev": "nodemon --exec babel-node src/init.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Bihan2536/wetube.git"
   },
-  "author": "Bihan2536",
+  "author": "KTH2536",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Bihan2536/wetube/issues"
