@@ -1,19 +1,20 @@
 # 2021 MyLMS
 
-Based on googling.
+Based on Googling.
 
 ---
 
-## requires
+## Problems
 
-EMPTY
+- [ ] MongoDB's id isn't number type. It's object type. I'm fucked up. Plz solve this tomorrow's I.
 
 ---
 
 ## DataBases
 
-[form](https://aquerytool.com:443/aquerymain/index/?rurl=9877ee44-de67-4796-9789-9973523e7f3a)<br>
-password : m5ca73
+By MongoDB
+* Feature
+  1. ID isn't number. MongoDB's _id is object.
 
 ---
 
