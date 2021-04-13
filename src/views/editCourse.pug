@@ -1,8 +1,6 @@
 extends base.pug
 block content 
   main 
-    if errorMessage 
-      span=errorMessage
     form(method="POST", action="/courses/edit")
       input(placeholder="Title Name (MAX:28)", type="text", name="title", required, maxlength="28")
       input(placeholder="Your display name (MAX:28)", type="text", name="author", required, maxlength="28")

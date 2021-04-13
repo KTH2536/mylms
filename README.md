@@ -19,3 +19,13 @@ By MongoDB
 ---
 
 #### Made by
+
+---
+
+#### Note
+
+1. Create NEW record =>POST
+2. read=>GET
+3. If the record exists then update else create a new record=>PUT
+4. update/modify=>PATCH
+5. delete=>DELETE

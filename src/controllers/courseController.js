@@ -13,17 +13,18 @@ export const editCourse = (req, res) => {
 export const postCourse = async (req, res) => {
   console.log("POSTED");
   const { title, author, hashtags } = req.body;
-  await new Course.create({
+  await Course.create({
     title,
     author,
-    hashtags: hashtags.split(" ").map(str => `#${str}`)
-  });
-  console.log(course);
+    hashtags: hashtags.trim().split(" ").map(str => `#${str}`)
+  }).catch(err => res.status(501).send(`Request Rejected ${err}`));
   return res.redirect('/');
 };
 
 export const deleteCourse = async (req, res) => {
-  const { _id } = req.params;
-  Course.Remove(Query.EQ("_id", _id));
+  const { id } = req.params;
+  let doc = await Course.findOne({ _id: id });
+  await doc.remove();
+  console.log(doc);
   return res.redirect('/');
 };

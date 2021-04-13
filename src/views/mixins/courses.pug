@@ -6,6 +6,6 @@ mixin courses(course)
     .hashtags  
       each tags in course.hashtags
         li= tags
-  form(method="DELETE", action="/courses/#{course.id}")
+  form(method="POST", action=`/courses/${course.id}/delete`)
     input(type="submit", value="X")
 
