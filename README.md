@@ -14,7 +14,7 @@ Based on Googling.
 
 By MongoDB
 * Feature
-  1. ID isn't number. MongoDB's _id is object.
+  1. ID isn't number. MongoDB's _id is object. -> [0-9a-f]{24}
 
 ---
 
