@@ -5,7 +5,6 @@ mixin courses(course)
     li Date: #{course.createdAt}
     .hashtags  
       each tags in course.hashtags
-        li= tags
+        li.hashtag tags
   form(method="POST", action=`/courses/${course.id}/delete`)
     input(type="submit", value="X")
-

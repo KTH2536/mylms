@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { courseSchema } from "./models/Schemas";
+import { courseSchema, userSchema } from "./models/Schemas";
 
 
 mongoose.connect('mongodb://127.0.0.1:27017/mylms', {useNewUrlParser: true, useUnifiedTopology: true});
@@ -11,3 +11,4 @@ db.once('open', () => {
 });
 
 export const Course = mongoose.model('Course', courseSchema);
+export const User = mongoose.model('User', userSchema);
