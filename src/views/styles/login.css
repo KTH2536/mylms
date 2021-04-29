@@ -1,5 +1,11 @@
 body {
+  background-color: #1D1B1B;
+}
+
+main {
+  padding-top: 35vh;
   display:flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -9,4 +15,48 @@ form {
   flex-direction: column;
   align-items:center;
   justify-content: space-evenly;
+}
+
+input[type="text"],
+input[type="password"] {
+  font-size: 18px;
+  height: 21px;
+  width: 180px;
+  border-radius: 8px;
+  border: 1px solid #EC4D36;
+  background-color: #EC4D36;
+  margin-top: 10px;
+}
+
+input[type="submit"] {
+  height: 40px;
+  width: 120px;
+  background-color: #EC4D36;
+  border-radius: 15px;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 5vh;
+}
+
+label {
+  margin-top: 10px;
+  color:#EC4D36;
+}
+
+.register {
+  text-decoration: none;
+  color: #EC4D36;
+  font-size: 20px;
+}
+
+header {
+  display:flex;
+  position:absolute;
+  top: 0px;
+}
+
+.homebtn {
+  font-size: 40px;
+  text-decoration: none;
+  color:#EC4D36;
 }

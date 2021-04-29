@@ -7,10 +7,11 @@ html(lang="ko-kr")
     header 
       a(href="/").homebtn <
     main
-      form(method="POST" action="/login") 
+      form(method="POST" action="/register") 
+        label(for="username") User Name
+        input(type="text" name="username" required maxlength="12" minlength="2")
         label(for="id") ID
         input(type="text" name="id" required maxlength="28" minlength="2")
         label(for="password") Password
         input(type="password" name="password" required maxlength="28")
-        input(type="submit" value="Login")
-      a(href="/register").register Or Register
+        input(type="submit" value="Register")
