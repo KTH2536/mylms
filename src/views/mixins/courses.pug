@@ -1,10 +1,11 @@
 mixin courses(course)
-  ul 
-    li Course Title: #{course.title}
-    li Author: #{course.author}
-    li Date: #{course.createdAt}
-    .hashtags  
-      each tags in course.hashtags
-        li.hashtag tags
-  form(method="POST", action=`/courses/${course.id}/delete`)
-    input(type="submit", value="X")
+  .courses
+    ul 
+      li Course Title: #{course.title}
+      li Author: #{course.author}
+      li Date: #{course.createdAt}
+      .hashtags  
+        each tags in course.hashtags
+          li.hashtag tags
+    form(method="POST", action=`/courses/${course.id}/delete`)
+      input(type="submit", value="X")#deletebtn

@@ -1,5 +1,29 @@
-#header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+/* header */
+
+header {
+  background-color: #2BAE66;
+  display:flex;
+  position: absolute;
+  width: 60vw;
+  height: 4vh;
+  justify-content: space-between;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 3vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FCF6F5;
+  color: #2BAE66;
+  border: 1px solid #FCF6F5;
+  border-radius: 2vh;
+  box-shadow: 0vh 0vh 0.8vh #FCF6F5;
+  width: 4vh;
+}
+
+footer {
+  font-size:10px;
+  color: #FCF6F5;
 }

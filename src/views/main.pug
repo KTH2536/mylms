@@ -2,7 +2,8 @@ extends base.pug
 include mixins/courses.pug
 block content
   main 
-    a(href='/courses/edit') ADD COURSE
+    a(href='/courses/edit')#addcourse
+      i(class="fas fa-plus") &nbsp; ADD COURSE
     each course in courses 
       +courses(course)
     else 
