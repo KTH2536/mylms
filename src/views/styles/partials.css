@@ -1,7 +1,7 @@
 /* header */
 
 header {
-  background-color: #2BAE66;
+  background-color: #fcfcfc;
   display:flex;
   position: absolute;
   width: 60vw;
@@ -15,8 +15,8 @@ header a {
   display:flex;
   align-items: center;
   justify-content: center;
-  background-color: #FCF6F5;
-  color: #2BAE66;
+  background-color: #fcfcfc;
+  color: #070707;
   border: 1px solid #FCF6F5;
   border-radius: 2vh;
   box-shadow: 0vh 0vh 0.8vh #FCF6F5;

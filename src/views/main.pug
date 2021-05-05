@@ -4,7 +4,8 @@ block content
   main 
     a(href='/courses/edit')#addcourse
       i(class="fas fa-plus") &nbsp; ADD COURSE
-    each course in courses 
-      +courses(course)
-    else 
-      h1 No Course in db
+    .show_dbs
+      each course in courses 
+        +courses(course)
+      else 
+        h1 No Course in db

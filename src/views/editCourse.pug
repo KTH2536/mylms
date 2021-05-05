@@ -1,8 +1,7 @@
 extends base.pug
 block content 
   main 
-    form(method="POST", action="/courses/edit")
+    form(method="POST", action="/courses/edit").add_course
       input(placeholder="Title Name (MIN:2 MAX:28)", type="text", name="title", required, minlength="2", maxlength="28")
       input(placeholder="Author Name(Custom) (MIN:2 MAX:28)", type="text", name="author", required, minlength="2", maxlength="28")
-      input(placeholder="input hashtags ex)Math Python Pandas", type="text", name="hashtags")
       input(type="submit", value="Create")

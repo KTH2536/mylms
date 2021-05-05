@@ -11,12 +11,13 @@ export const editCourse = (req, res) => {
 };
 
 export const postCourse = async (req, res) => {
+  let date = new Date()
   console.log("POSTED");
   const { title, author, hashtags } = req.body;
   await Course.create({
     title,
     author,
-    hashtags: hashtags.trim().split(" ").map(str => `#${str}`)
+    createdAt: `${date.getFullYear()}년 ${date.getMonth() < 9 ? '0' + (date.getMonth()+1) : date.getMonth()}/${date.getDate() < 10 ? '0' + date.getDate() : date.getDate()} ${date.getHours()}:${date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes()}`
   }).catch(err => res.status(501).send(`Request Rejected ${err}`));
   return res.redirect('/');
 };

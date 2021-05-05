@@ -1,7 +1,7 @@
 /* base part */
 
 body {
-  background-color: #2BAE66;
+  background-color: #fcfcfc;
   width: 60vw;
   height: 100%;
   margin: 0;
@@ -12,16 +12,16 @@ body {
 
 main {
   padding-top: 6vh;
-  color: #FCF6F5;
+  color: #0a0a0a;
   text-decoration: none;
   font-size: 22px;
 }
 
 main #addcourse {
-  color: #FcF6F5;
+  color: #0a0a0a;
 }
 
-form {
+.add_course {
   position:relative;
   left:20vw;
   display:flex;
@@ -38,11 +38,11 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-  background-color: #5a4d50;
+  box-shadow: 0px 0px 10px darkturquoise;
   border-radius: 2.5vh;
 }
 
-input[type="submit"] {
+.add_course input[type="submit"] {
   position: relative;
   margin-top: 2vh;
   left: 5vw;
@@ -51,21 +51,58 @@ input[type="submit"] {
   border-radius: 2.5vh;
 }
 
-#deletebtn {
-  position: relative;
-  width: 2vw;
-  height: 2vw;
-  border: 1px #EC4D36 solid;
-  box-shadow: 0vw 0vw 0.3vw #EC4D36;
-  background-color: #EC4D36;
+.course {
+  border-radius: 15px;
+  background-color: #36ec88;
+  box-shadow: 0px 0px 2px #363636;
+  width:200px;
+  height: 200px;
+  margin-bottom: 5vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 40px;
 }
 
 .courses {
-  border: 1px solid #FcF6F5;
-  margin-bottom: 5vh;
+  border-radius: 0px 0px 15px 15px;
+  width: 200px;
+  background-color: #fcfcfc;
+  display:flex;
+  flex-direction: column;
+  padding-bottom: 20px;
 }
 
-.hashtags {
+.title {
+  padding-left: 12px;
+  font-size: 22px;
+}
+
+.author {
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.date {
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+#deletebtn {
+  position:relative;
+  left: 75px;
+  margin-bottom: 5vh;
+  width: 35px;
+  height: 35px;
+  border: 1px #EC4D36 solid;
+  box-shadow: 0vw 0vw 0.3vw #EC4D36;
+  border-radius: 17.5px;
+  background-color: #EC4D36;
+}
+
+.show_dbs {
+  margin-top: 3vh;
   display:flex;
-  justify-content: space-evenly;
+
 }
