@@ -1,6 +1,6 @@
 # 2021 MyLMS
 
-Based on Googling.
+Based on Googling. 5월 16일 COS PRO 1급 시험을 위한 일시동결
 
 ---
 
