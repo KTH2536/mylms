@@ -1,0 +1,21 @@
+aside {
+  width: 4vw;
+  height: 100%;
+  background-color: dodgerblue;
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8vw;
+  justify-content: flex-start;
+  align-items: center;
+  color: darkturquoise;
+}
+
+aside > a {
+  padding-top: 2vh;
+}
+
+aside a:link, aside a:visited {
+  color: #efefef;
+}

@@ -2,8 +2,6 @@ extends base.pug
 include mixins/courses.pug
 block content
   main 
-    a(href='/courses/edit')#addcourse
-      i(class="fas fa-plus") &nbsp; ADD COURSE
     .show_dbs
       each course in courses 
         +courses(course)

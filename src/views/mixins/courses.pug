@@ -2,7 +2,7 @@ mixin courses(course)
   .course
     form(method="POST", action=`/courses/${course.id}/delete`)
       input(type="submit", value="X")#deletebtn
-    .courses 
+    a(href=`/courses/${course.id}`).courses 
       .title #{course.title.length > 12 ? course.title.substring(0,12) + "..." : course.title }
       .author by #{course.author}
       .date #{course.createdAt}

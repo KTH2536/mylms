@@ -1,10 +1,11 @@
 /* header */
 
 header {
+  margin-top: 0.5vh;
   background-color: #fcfcfc;
   display:flex;
   position: absolute;
-  width: 60vw;
+  width: 80vw;
   height: 4vh;
   justify-content: space-between;
 }
@@ -20,10 +21,20 @@ header a {
   border: 1px solid #FCF6F5;
   border-radius: 2vh;
   box-shadow: 0vh 0vh 0.8vh #FCF6F5;
-  width: 4vh;
+  width: 4vw;
 }
 
 footer {
   font-size:10px;
   color: #FCF6F5;
+}
+
+#addcourse {
+  width: 15vw;
+}
+
+#addcourse i {
+  color: #0a0a0a;
+  width: 15vw;
+  font-size: 1.4vw;
 }

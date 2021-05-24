@@ -4,10 +4,13 @@ html(lang="ko-kr")
     style 
       include styles/base.css
       include styles/partials.css
+      include styles/sidebar.css
     script(src="https://kit.fontawesome.com/d4e2b44a2e.js" crossorigin="anonymous")
   body 
     header 
       include partials/header.pug
     block content 
+    aside 
+      include partials/aside.pug
     footer 
       include partials/footer.pug
